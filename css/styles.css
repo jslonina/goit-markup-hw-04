@@ -181,6 +181,14 @@ p {
     color: var(--bacground-color-white);
     background-color: var(--second-color);
 }
+
+.button:hover,
+.button:focus {
+    box-shadow: 
+    0px 2px 2px rgba(0, 0, 0, 0.12),
+    0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 3px 1px rgba(0, 0, 0, 0.1);
+}
 /*===================about===================*/
 .about {
     margin-top: 94px;
@@ -319,17 +327,17 @@ p {
 }
 
 .social-link:hover,
-.social-link:focus,
-.social-icon:hover,
-.social-icon:focus {
+.social-link:focus
+ {
     background-color: var(--second-color);
+    color: var(--bacground-color-white);
     fill:var(--bacground-color-white);
 }
 
-/* .social-icon:hover,
+.social-icon:hover,
 .social-icon:focus {
-fill: var(--bacground-color-white);
-} */
+fill: currentColor;
+}
 
 .social-icon-link:not(:last-child) {
     padding-right: 10px;
@@ -389,13 +397,12 @@ fill: var(--bacground-color-white);
 }
 
 .client-link:hover,
-.client-link:focus,
-.client-icon:focus,
-.client-icon:hover {
+.client-link:focus
+ {
+    color: var(--second-color);
     fill: var(--second-color);
     border-color: var(--second-color);
 }
-
 
 /*==============portfolio-btn==============*/
 .project-btn {
@@ -410,6 +417,9 @@ fill: var(--bacground-color-white);
     justify-content: center;
 }
 
+.button {
+    border-radius: 4px;
+}
 .portfolio-btn {
     text-align: center;
 
@@ -428,22 +438,16 @@ fill: var(--bacground-color-white);
 .list-card {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    margin-left: -30px;
+    margin-top: -30px;
 }
 
 .card {
-    width: calc((100%)/3);
-    
-    margin-bottom: 30px
+    flex-basis: calc(100%/3 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
 }
 
-/* .card {
-    margin-bottom: 30px;
-} */
-
-.card(:nth-last-child())  {
-    margin-right: 30px;
-}
 
 .card figcaption {
     border-bottom: 1px solid var(--line-color);
@@ -451,7 +455,6 @@ fill: var(--bacground-color-white);
     border-right: 1px solid var(--line-color); 
     
     padding: 20px 24px;
-    width: 370px;    
 } 
 
 .photo-head {
@@ -462,6 +465,13 @@ fill: var(--bacground-color-white);
     margin-bottom: 4px;
 }
 
+.card:hover,
+.card:focus {
+    box-shadow: 
+    1px 4px 6px rgba(0, 0, 0, 0.16),
+    1px 4px 6px rgba(0, 0, 0, 0.16),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 
 /*-------------------FOOTER-------------------*/
 
