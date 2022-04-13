@@ -14,6 +14,8 @@
 body { 
     font-family: var(--main-font);
     color: var(--main-color);
+    margin: 0 auto;
+    max-width: 1600px;
 }
 
 h1,
@@ -134,7 +136,7 @@ p {
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)),
         url("../images/background-img.jpg");
-    background-size:cover;
+        background-size: cover;
     padding-top: 200px;
     padding-bottom: 210px;  
 }
@@ -322,9 +324,6 @@ p {
     padding-bottom: 30px;
 }
 
-.social-icon {
-    fill: var(--social-icon-color);
-}
 
 .social-link:hover,
 .social-link:focus
@@ -332,11 +331,6 @@ p {
     background-color: var(--second-color);
     color: var(--bacground-color-white);
     fill:var(--bacground-color-white);
-}
-
-.social-icon:hover,
-.social-icon:focus {
-fill: currentColor;
 }
 
 .social-icon-link:not(:last-child) {
@@ -348,6 +342,7 @@ fill: currentColor;
     width: 44px;
     height: 44px;
     background-color: var(--bacground-color-white) ;
+    fill: var(--social-icon-color);
     border-radius:50%;
     align-items: center;
     justify-content: center;
